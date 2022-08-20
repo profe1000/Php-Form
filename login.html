@@ -4,7 +4,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title> Shop - Printing Shop </title>
+<title> Shop - Ladies Fashion </title>
 <link rel="stylesheet" href="css/shop.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="images/logo.png">
@@ -19,7 +19,7 @@
 
         <div class="my-col l6 s6 m6">
             <img alt="logo" src="images/logo.png" style="height:40px; margin-top:10px; margin-left:10px" />
-            <b class="my-large">My Online Shop</b>
+            <b class="my-large">Admin Login</b>
         </div>
 
         <div class="my-col l6 s6 m6 my-right-align my-padding">
@@ -34,19 +34,34 @@
     <div class="my-content" style="min-height:300px">
 
         <div class="my-container" id="displaydefault">
+          
+            <h3> My Login</h3>
 
-            <h3> My Products</h3>
+            <div class="my-container" id="displaydefault">
 
+                <form name="form1" action="login.php" method="post">
    
-            <a onclick="showcartdisplay()" class="my-btn my-blue my-round">My Cart <span id="cartnumber"> </span></a>
+             
+               <label>  Email Address </label>
+    
+               <input id="txtemail" name="txtemail" class="my-input my-border my-round"   /> <br />
+   
+               <label>  Password </label>
+   
+               <input id="txtpassword" name="txtpassword" class="my-input my-border my-round"  type="password"  /> <br />
+   
+               <input type ="submit"  class="my-btn my-blue my-round" Value="Login" />
+   
+               <br />  <br />
+   
+                </form>
+   
+   </div>
 
-            <div id="errmsgpage1" style="color:red"></div>
 
-            <div id="displayproducts" class="my-col">
-            </div>
+
 
         </div>
-
     </div>
 
 
@@ -55,7 +70,7 @@
         <div class="my-content">
             
         
-       <div class="my-col l3 s6 m3" style="padding:5px">
+       <div class="my-col l6 s6 m3" style="padding:5px">
     
         <a>Log In to Your Dashboard</a> <br /><br />
     
@@ -65,7 +80,7 @@
     
        </div>
     
-       <div class="my-col l3 s6 m3" style="padding:5px">
+       <div class="my-col l6 s6 m3" style="padding:5px">
     
         <a>Contact Us</a> <br /><br />
     
@@ -75,34 +90,13 @@
     
        </div>
     
-       <div class="my-col l3 s6 m3" style="padding:5px">
-    
-        <a>Terms of Use</a> <br /><br />
-    
-        <a>Privacy Agreement</a> <br /><br />
-    
-       </div>
-    
-       <div class="my-col l3 s6 m3" style="padding:5px">
-    
-        <a>© 2022 My printing Service, Inc.</a> <br /><br />
-    
-        <a>Canada</a> <br /><br />
-    
-       </div>
-    
-    
+     
        </div>
     
     </div>
     
     
-   <script src="js/shop.js?2">
-
-
    </script>
-
-    
 </body>
 
 </html>
